@@ -2,7 +2,12 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <!-- Favicon from Google Drive, using thumbnail API for consistency -->
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://drive.google.com/thumbnail?id=1tcJyKU40_NBxwD6OsrF9NIncNlNlUSzl&sz=w64"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Meama Community</title>
 
@@ -86,7 +91,6 @@
       }
     </style>
     <!-- Tailwind CDN config removed for production build -->
-
     <script type="importmap">
       {
         "imports": {
@@ -100,10 +104,10 @@
         }
       }
     </script>
-    <script type="module" crossorigin src="/Meama-Community/assets/index-D9sICAgY.js"></script>
-    <link rel="stylesheet" crossorigin href="/Meama-Community/assets/index-DagPxNDq.css">
+    <link rel="stylesheet" href="/index.css" />
   </head>
   <body class="bg-brand-bg text-brand-text-primary">
     <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
   </body>
 </html>
