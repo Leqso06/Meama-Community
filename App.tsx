@@ -331,7 +331,7 @@ const App: React.FC = () => {
       </div>
 
       {/* DESKTOP LIST */}
-      <main className="hidden md:block container mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <main className="hidden md:block max-w-screen-2xl mx-auto desktop-shell py-12">
         <h1 ref={desktopTitleRef} className={`text-3xl sm:text-4xl lg:text-5xl font-bold text-center mb-8 text-brand-text-primary fade-in-up text-[#FCFBF4] tracking-wide`}>{mainTitleText}</h1>
         <div className="flex flex-col md:flex-row justify-between items-center gap-4 mb-8 md:mb-12 fade-in-up relative z-30" style={{animationDelay: '50ms'}}>
             <div className="relative w-full md:w-96">
@@ -352,7 +352,7 @@ const App: React.FC = () => {
              </div>
         ) : (
             <div className="w-full mx-auto">
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-4 md:gap-5">
                     {desktopPaginatedData.map((barista, index) => (
                         <div key={barista.id} className="fade-in-up" style={{animationDelay: `${100 + index * 50}ms`}}><BaristaCard barista={barista} onSelect={() => setSelectedBaristaId(barista.id)} /></div>
                     ))}

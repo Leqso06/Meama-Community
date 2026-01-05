@@ -1,3 +1,30 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Custom layout shell padding for desktop main container */
+.desktop-shell {
+	padding-left: 1.5rem;
+	padding-right: 1.5rem;
+}
+
+@media (min-width: 1024px) {
+	.desktop-shell {
+		padding-left: 7rem;
+		padding-right: 7rem;
+	}
+}
+
+@media (min-width: 1440px) {
+	.desktop-shell {
+		padding-left: 11rem;
+		padding-right: 11rem;
+	}
+}
+
+@media (min-width: 2560px) {
+	.desktop-shell {
+		padding-left: 0rem;
+		padding-right: 0rem;
+	}
+}

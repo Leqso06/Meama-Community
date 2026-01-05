@@ -19,7 +19,7 @@ const BaristaCardHorizontal: React.FC<BaristaCardProps> = ({ barista, onSelect }
   return (
     <div 
         onClick={onSelect}
-        className="group relative flex items-stretch bg-[#1a1a1a] border border-[#2a2a2a] rounded-2xl p-0 active:bg-[#202020] active:scale-[0.98] transition-all duration-200 cursor-pointer h-[165px] w-full max-w-[380px] mx-auto overflow-hidden shadow-sm"
+        className="group relative flex items-stretch bg-[#1a1a1a] border border-[#2a2a2a] rounded-2xl p-0 active:bg-[#202020] active:scale-[0.98] transition-all duration-200 cursor-pointer h-[165px] w-full overflow-hidden shadow-sm"
     >
       <div className="w-[50%] h-full shrink-0 relative bg-gray-800">
         <img

@@ -19,7 +19,7 @@ const BaristaCard: React.FC<BaristaCardProps> = ({ barista, onSelect }) => {
   return (
     <div 
         onClick={onSelect}
-        className="group relative flex items-stretch bg-[#1a1a1a] border border-[#2a2a2a] rounded-2xl p-0 hover:border-brand-accent/40 hover:bg-[#202020] hover:shadow-lg hover:-translate-y-1 transition-all duration-300 cursor-pointer h-[150px] w-full max-w-[340px] mx-auto overflow-hidden"
+        className="group relative flex items-stretch bg-[#1a1a1a] border border-[#2a2a2a] rounded-2xl p-0 hover:border-brand-accent/40 hover:bg-[#202020] hover:shadow-lg hover:-translate-y-1 transition-all duration-300 cursor-pointer h-[150px] w-full overflow-hidden"
     >
       <div className="w-[140px] h-full shrink-0 relative bg-gray-800">
         <img
